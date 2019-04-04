@@ -1,0 +1,33 @@
+{
+  "name": "traffic-flow-simulator",
+  "version": "1.0.0",
+  "description": "Simulates traffic with various driver personalities",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node -r esm src/index.js",
+    "mocha": "mocha --require esm",
+    "test": "npm run mocha -- \"./src/**/*-test.js\"",
+    "test:watch": "npm run test -- -w --reporter min"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gundelsby/traffic-flow-simulator.git"
+  },
+  "author": "gundelsby@github",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gundelsby/traffic-flow-simulator/issues"
+  },
+  "homepage": "https://github.com/gundelsby/traffic-flow-simulator#readme",
+  "devDependencies": {
+    "@sinonjs/referee": "^3.2.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "mocha": "^6.0.2"
+  },
+  "dependencies": {
+    "esm": "^3.2.22"
+  }
+}
